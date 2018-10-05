@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feathers client</title>
+</head>
+<body>
+<script src="//unpkg.com/feathers-client@^2.0.0/dist/feathers.js"></script>
+<script>
+  // feathers-client is exposed as the `feathers` global.
+  var app = feathers()
+    .configure(feathers.hooks())
+    .configure(feathers.rest().fetch(fetch))
+    .configure(feathers.authentication())
+
+  app.authenticate({
+    "strategy": "local",
+    "email": "test@example.com",
+    "password": "secret"
+  }).then(result => {
+    console.log('Client authenticated', result);
+  });
+</script>
+</body>
+</html>

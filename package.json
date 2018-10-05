@@ -1,0 +1,25 @@
+{
+  "name": "feather-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "authentication.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ajay Charotariya <harshp@officebrain.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@feathersjs/authentication": "^2.1.2",
+    "@feathersjs/authentication-client": "^1.0.2",
+    "@feathersjs/authentication-jwt": "^2.0.0",
+    "@feathersjs/authentication-local": "^1.1.0",
+    "@feathersjs/express": "^1.2.0",
+    "@feathersjs/feathers": "^3.1.3",
+    "@feathersjs/rest-client": "^1.3.3",
+    "@feathersjs/socketio": "^3.2.0",
+    "feathers-memory": "^2.1.1",
+    "localstorage-memory": "^1.0.2",
+    "superagent": "^3.8.2"
+  }
+}
